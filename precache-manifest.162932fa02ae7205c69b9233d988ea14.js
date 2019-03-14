@@ -28,20 +28,20 @@ self.__precacheManifest = [
     "url": "/nasacollection/static/js/main.02a7af43.chunk.js"
   },
   {
-    "revision": "40a6d365dd3b8fa31fc9e90499631298",
-    "url": "/nasacollection/static/media/tick.40a6d365.svg"
-  },
-  {
     "revision": "e7968bc7855f2380ff042c5b5d24b341",
     "url": "/nasacollection/static/media/close.e7968bc7.svg"
   },
   {
-    "revision": "ffee154c12840eb6ca93b91eace1d339",
-    "url": "/nasacollection/static/media/edit.ffee154c.svg"
+    "revision": "40a6d365dd3b8fa31fc9e90499631298",
+    "url": "/nasacollection/static/media/tick.40a6d365.svg"
   },
   {
     "revision": "99e3c7ec332864aa3e5701eaf756506b",
     "url": "/nasacollection/static/media/delete.99e3c7ec.svg"
+  },
+  {
+    "revision": "ffee154c12840eb6ca93b91eace1d339",
+    "url": "/nasacollection/static/media/edit.ffee154c.svg"
   },
   {
     "revision": "31b44a6764213fbdeb62bb4024766deb",
