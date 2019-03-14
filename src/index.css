@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  font-family: Arial,sans-serif;
+  box-sizing: border-box;
+}
+.btn {
+  font-family: Arial,sans-serif;
+  background-color: #FFF;
+  color: #43609C;
+  font-size: 15px;
+  text-shadow: 0 0 0 #43609C;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #43609C;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: #43609C;
+  color: #FFF;
+}
+
+.content-wrapper {
+  display: block;
+  width: 980px;
+  margin: 0 auto;
+}
+.content-wrapper .top-info {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+.content-wrapper .top-info h2 {
+  font-size: 28px;
+  color: #AAA;
+}
+.top-info .add-new-collection {
+  display: block;
+}
+.add-to-collection,
+.top-info .add-new-collection .add-item {
+  color: #FFF;
+  text-shadow: 0 0 0 #43609C;
+  background-color: #43609C;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  vertical-align: bottom;
+  padding: 2px 15px 2px 2px;
+}
+.modal-action span.icon.add,
+.top-info .add-new-collection .add-item span.icon.add {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.add-to-collection:hover,
+.top-info .add-new-collection .add-item:hover {
+  background-color: #FFF;
+  color: #43609C;
+}
+
+.content-wrapper .main-content {
+  display: block;
+}
+.main-content .list-collection-nasa {
+  list-style: none;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.list-collection-nasa .box-collection {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+.list-collection-nasa .box-collection .box-image {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  text-align: center;
+  border: 1px solid #CCC;
+  position: relative;
+  overflow: hidden;
+}
+.list-collection-nasa .box-collection .box-image img {
+  width: 100%;
+  height: 150px;
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.list-collection-nasa .box-collection .box-information {
+
+}
+.box-information .heading-box {
+  display: inline-block;
+  margin: 10px 0;
+  width: 100%;
+}
+.box-information .heading-box .date-publish,
+.box-information .heading-box .author {
+  font-size: 12px;
+  color: #AAA;
+  width: 50%;
+  float: left;
+}
+.box-information .heading-box .date-publish {
+  text-align: right;
+}
+.box-information .detail-box {
+
+}
+.box-information .detail-box .title {
+  margin-top: 0;
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box-information .detail-box .description {
+  font-size: 13px;
+  color: #AAA;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 50px;
+  margin: 0 auto 10px;
+  line-height: 16px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box-information .buttons-action {
+  
+}
+
+.box-information .buttons-action .btn {
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+}
+.search-content {
+  display: block;
+  margin-bottom: 20px;
+}
+.search-content .box-search {
+  padding: 0 8px;
+}
+.text-box {
+  width: 250px;
+  height: 35px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #43609C;
+  font-family: sans-serif;
+  color: #43609C;
+  display: inline-block;
+  vertical-align: top;
+}
+.box-search .search {
+
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal.active {
+  display: block;
+}
+.modal-content {
+  display: block;
+  width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  z-index: 100;
+  padding: 20px;
+  background-color: #FFF;
+}
+.modal-content .close-modal {
+  position: absolute;
+  border-radius: 50%;
+  right: 5px;
+  top: 5px;
+}
+.form-detail-info {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.form-detail-info .input-form {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.form-detail-info .input-form label {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+.form-detail-info .input-form input {
+  width: calc(70% - 10px);
+}
+.form-detail-info .input-form .modal-description {
+  height: auto;
+  width: calc(70% - 10px);
+}
+.modal-action {
+  text-align: center;
+  margin: 50px 0 20px;
+}
+.modal-action .add-collection {
+  vertical-align: bottom;
+}
+.readonly {
+  background-color: #EEE;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-size: 18px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-color: #AAA;
+  vertical-align: middle;
+}
+.heart {
+  background-image: url(images/heart.svg);
+}
+.heart.favorite {
+  background-image: url(images/favorite-heart-button.svg);
+}
+.add {
+  background-image: url(images/add.svg);
+}
+.close {
+  background-image: url(images/close.svg);
+}
+.tick {
+  background-image: url(images/tick.svg);
+}
+.edit {
+  background-image: url(images/edit.svg);
+}
+.del {
+  background-image: url(images/delete.svg);
+}
+.back {
+  background-image: url(images/back.svg);
+}
+.small-icon {
+  width: 20px;
+  height: 20px;
+}
+.link-section {
+  display: block;
+  margin-top: 20px;
+}
+.link-section .back-link {
+  text-decoration: none;
+  color: #43609C;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.link-section .back-link:hover {
+  opacity: 0.8;
+}
+.link-section .back-link span {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}

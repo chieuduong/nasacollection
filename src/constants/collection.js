@@ -1,0 +1,12 @@
+/*
+ *  
+ * Home constants
+ *
+ */
+
+export const collection = {
+    REQUEST_NASA : 'REQUEST_NASA',
+    REQUEST_NASA_SUCCESS: 'REQUEST_NASA_SUCCESS',
+    REQUEST_NASA_FAIL: 'REQUEST_NASA_FAIL',
+    REQUEST_COLLECTION : 'REQUEST_COLLECTION',
+} 
